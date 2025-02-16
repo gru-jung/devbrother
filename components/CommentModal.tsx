@@ -9,15 +9,8 @@ import {
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { IPost, IComment } from "@/types"
-
-interface ICommentModalProps {
-  isOpen: boolean
-  onClose: () => void
-  post: IPost | null
-  comments: IComment[]
-  onAddComment: (postId: string, content: string) => void
-}
+import { ICommentModalProps } from "@/types"
+import Image from "next/image"
 
 export default function CommentModal({
   isOpen,

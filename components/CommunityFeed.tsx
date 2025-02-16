@@ -6,76 +6,86 @@ import CommentModal from "./CommentModal"
 import { IPost, IComment } from "@/types"
 
 // 목업 데이터
-const MOCK_POSTS = [
+const MOCK_POSTS: IPost[] = [
   {
     postId: "1",
     imageURL: "https://picsum.photos/seed/1/400/400",
     userName: "창작자1",
     likes: 42,
-    comments: 5
+    comments: 5,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "2",
     imageURL: "https://picsum.photos/seed/2/400/400",
     userName: "창작자2",
     likes: 31,
-    comments: 3
+    comments: 3,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "3",
     imageURL: "https://picsum.photos/seed/3/400/400",
     userName: "창작자3",
     likes: 28,
-    comments: 7
+    comments: 7,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "4",
     imageURL: "https://picsum.photos/seed/4/400/400",
     userName: "창작자4",
     likes: 56,
-    comments: 8
+    comments: 8,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "5",
     imageURL: "https://picsum.photos/seed/5/400/400",
     userName: "창작자5",
     likes: 39,
-    comments: 4
+    comments: 4,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "6",
     imageURL: "https://picsum.photos/seed/6/400/400",
     userName: "창작자6",
     likes: 45,
-    comments: 6
+    comments: 6,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "7",
     imageURL: "https://picsum.photos/seed/7/400/400",
     userName: "창작자7",
     likes: 33,
-    comments: 2
+    comments: 2,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "8",
     imageURL: "https://picsum.photos/seed/8/400/400",
     userName: "창작자8",
     likes: 51,
-    comments: 9
+    comments: 9,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "9",
     imageURL: "https://picsum.photos/seed/9/400/400",
     userName: "창작자9",
     likes: 47,
-    comments: 5
+    comments: 5,
+    createdAt: "2024-01-15T09:00:00.000Z"
   },
   {
     postId: "10",
     imageURL: "https://picsum.photos/seed/10/400/400",
     userName: "창작자10",
     likes: 38,
-    comments: 4
+    comments: 4,
+    createdAt: "2024-01-15T09:00:00.000Z"
   }
 ]
 

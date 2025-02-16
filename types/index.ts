@@ -15,4 +15,18 @@ export interface IComment {
   content: string
   userName: string
   createdAt: string
+}
+
+export interface ICommunityFeedCardProps {
+  post: IPost
+  onLike: () => void
+  onComment: () => void
+}
+
+export interface ICommentModalProps {
+  isOpen: boolean
+  onClose: () => void
+  post: IPost | null
+  comments: IComment[]
+  onAddComment: (postId: string, content: string) => void
 } 

@@ -2,14 +2,8 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Heart, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import { Button } from "./ui/button"
-import { IPost } from "@/types"
+import { ICommunityFeedCardProps } from "@/types"
 import { useRouter } from "next/navigation"
-
-interface ICommunityFeedCardProps {
-  post: IPost
-  onLike: () => void
-  onComment: () => void
-}
 
 export default function CommunityFeedCard({ post, onLike, onComment }: ICommunityFeedCardProps) {
   const router = useRouter()
